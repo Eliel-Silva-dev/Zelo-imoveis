@@ -1,5 +1,60 @@
-#contact {
-  h2{
-    font-size: 3rem;
+#header_contact {
+  min-height: 300px;
+  margin-top: 60px;
+  margin-bottom: -60px;
+  background-color: var(--secondary_color);
+  background-image: url('/img/imgzeloimoeisabout.png');
+  background-position: top left;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    font-size: 4rem;
+    color: var(--primary_color);
+    text-align: center;
+  }
+}
+#main_contact {
+  background-color: var(--secondary_color);
+  color: var(--primary_color);
+  display: flex;
+  justify-content: center;
+
+  div {
+    width: 400px;
+    border: 2px solid var(--primary_color);
+    margin: 30px 0;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h2 {
+      font-size: 3rem;
+      text-align: center;
+    }
+    h3 {
+      font-size: 2rem;
+      border-bottom: 1px solid var(--primary_color);
+    }
+    p {
+      font-size: 1.6rem;
+      svg{
+        color: rgb(117, 233, 117);
+      }
+    }
+    a {
+      color: var(--primary_color);
+      background-color: var(--secondary_color);
+    }
+    #redes {
+      width: 100%;
+      font-size: 3rem;
+      display: flex;
+      justify-content: space-around;
+    }
   }
 }
