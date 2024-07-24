@@ -8,12 +8,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 #main_home h2 {
   font-size: 4rem;
   color: var(--primary_color);
   max-width: 1000px;
   text-align: center;
+  margin: 10px 0;
 }
 #main_home .form_home {
   border: 1px solid var(--secondary_color);
