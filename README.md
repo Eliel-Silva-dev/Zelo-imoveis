@@ -1,15 +1,20 @@
 # Projeto Zelo-imoveis
 
-Pagina da imobiliária Zelo Imoveis...
+Pagina da imobiliária Zelo Imoveis.
+
+Este projeto tem como objetivo apresentar, aos futuros proprietários, os serviços oferecidos pela imobiliária e também prestar suporte em cada uma das etapas necessárias.
 
 [Visitar site]()
 
 ### Lista com as funcionalidades:
 
-- [x]
-- [x]
-- [x]
+- [x] Apresentação de imoveis para compra ou aluguel;
+- [x] Contato direto com os corretores;
 - [x] Implementação da LGPD;
+
+### Desafios do projeto
+
+- Trabalhei a responsividade do projeto com o objetivo de antecipar os breakpoints em resoluções menores.
 
 ## 🔧 Instalação
 
@@ -53,10 +58,11 @@ E com as bibliotecas:
 
 ## Próximos passos
 
-- [ ] implementar lazyload;
-- [ ] implementar tema light / dark;
-- [ ] ;
-- [ ] ;
+- [ ] adicionar listagem de imoveis a venda;
+- [ ] adicionar listagem de imoveis para aluguel;
+- [ ] adicionar métodos de financiamento;
+- [ ] adicionar métodos de parcelamento;
+- [ ] adicionar cadastro de clientes;
 
 ## ✒️ Autor
 
