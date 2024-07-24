@@ -5,9 +5,13 @@ import { FaCookieBite } from 'react-icons/fa';
 const Logo = () => {
   return (
     <div id={style.logo_title}>
-      <img src="/img/logo.png" alt="logo imobiliaria Santos" />
       <h2>
-        <Link href={'/'}>Zelo Imoveis</Link>
+        <Link href={'/'}>
+          <img
+            src="/img/imgzeloimoveislogo.png"
+            alt="logo zelo imoveis"
+          />
+        </Link>
       </h2>
     </div>
   );

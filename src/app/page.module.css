@@ -1,3 +1,9 @@
+#main_home {
+  background-image: url('/img/imgzeloimoveisfullhome.png');
+  background-color: var(--secondary_color);
+  background-position: center;
+  background-size: cover;
+}
 #main_home h2 {
-    font-size: 3rem;
+  font-size: 3rem;
 }

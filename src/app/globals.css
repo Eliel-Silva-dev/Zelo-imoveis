@@ -7,10 +7,10 @@ html {
   font-size: 62.5%;
 }
 :root {
-  --primary_color: ;
-  --secondary_color: ;
-  --text_color: ;
-  --hover: ;
+  --primary_color: #ffffff;
+  --secondary_color: #163972;
+  --text_color: #212529;
+  --hover: #090cc9;
 }
 
 body {

@@ -3,19 +3,7 @@
   align-items: center;
   min-width: 200px;
 
-  svg {
-    font-size: 3rem;
-    color: var(--secondary_color);
-  }
-
-  a {
-    color: var(--secondary_color);
-    font-size: 2rem;
-    margin-left: 5px;
-    text-decoration: none;
-
-    &:hover {
-      color: var(--text_color);
-    }
+  img {
+    width: 60%;
   }
 }
