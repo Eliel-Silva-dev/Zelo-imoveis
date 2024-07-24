@@ -3,7 +3,72 @@
   background-color: var(--secondary_color);
   background-position: center;
   background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #main_home h2 {
-  font-size: 3rem;
+  font-size: 4rem;
+  color: var(--primary_color);
+  max-width: 1000px;
+  text-align: center;
+}
+#main_home .form_home {
+  border: 1px solid var(--secondary_color);
+  padding: 15px;
+  width: 400px;
+  min-height: 400px;
+  background-color: #ffffffc1;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+#main_home .form_home label {
+  color: var(--secondary_color);
+  font-size: 2rem;
+}
+#main_home .form_home select,
+#main_home .form_home input {
+  margin: 5px 0;
+  height: 40px;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 1.8rem;
+  padding-left: 5px;
+  border: 2px solid var(--secondary_color);
+}
+#main_home #endereco {
+  padding-left: 8px;
+}
+#main_home #endereco::placeholder {
+  color: var(--text_color);
+}
+#main_home .form_home select input {
+  font-size: 1.7rem;
+}
+#main_home .form_home #input_valor_min,
+#main_home .form_home #input_valor_max {
+  width: 49%;
+}
+#main_home .form_home #submit_busca {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+#main_home .form_home #submit_busca button {
+  padding: 10px;
+  background-color: var(--secondary_color);
+  border: 1px solid var(--hover);
+  color: var(--primary_color);
+  border-radius: 10px;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+#main_home .form_home #submit_busca button:hover {
+  background-color: var(--hover);
+
 }

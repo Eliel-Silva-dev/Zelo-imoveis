@@ -42,13 +42,7 @@ const MenuDesk = () => {
           <Link href={'/'}>Inicio</Link>
         </li>
         <li>
-          <Link href={'/sobre'}>Sobre</Link>
-        </li>
-        <li>
-          <Link href={'/servicos'}>Serviços</Link>
-        </li>
-        <li>
-          <Link href={'/corretores'}>Corretores</Link>
+          <Link href={'/about'}>Sobre</Link>
         </li>
         <li id={style.plus}>
           <Button>
