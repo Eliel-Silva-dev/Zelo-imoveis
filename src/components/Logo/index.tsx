@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import style from './style.min.module.css';
-import { FaCookieBite } from 'react-icons/fa';
 
 const Logo = () => {
   return (
