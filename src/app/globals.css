@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+:root {
+  --primary_color: ;
+  --secondary_color: ;
+  --text_color: ;
+  --hover: ;
+}
+
+body {
+  background-color: var(--primary_color);
+  color: var(--text_color);
+}
+main {
+  min-height: 100vh;
+  margin-top: 60px;
+}
+a {
+  text-decoration: none;
+  color: var(--secondary_color);
+}
+a:hover {
+  color: var(--hover);
+}
+li {
+  list-style: none;
+}
