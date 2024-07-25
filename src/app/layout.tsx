@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: 'Pagina da imobiliária zelo imoveis',
   keywords:
     'imobiliaria,zelo imoveis, imobiliaria zelo imoveis, alugar casas, aluguel de casas, casas para alugar, casa nova, casa barata',
-  icons: '/img/favicon_zeloimoveis.ico',
+  icons: '/img/imgfavicon_zeloimoveis.ico',
   robots: 'index, follow',
   authors: [{ name: 'Eliel Silva', url: 'https://github.com/Eliel-Silva-dev' }],
 };

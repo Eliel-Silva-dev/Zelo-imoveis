@@ -1,8 +1,8 @@
-import style from './style.min.module.css';
+ import style from './style.min.module.css';
 
 const Lgpd = () => {
   const setLgbd = () => {
-    localStorage.setItem('lgpd', 'confirmado');
+    localStorage.setItem('lgpdzeloimoveis', 'confirmado');
 
     const lgpdEl = document.getElementById('lgpd') as HTMLElement;
     lgpdEl.remove();
