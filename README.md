@@ -4,12 +4,10 @@ Pagina da imobiliária Zelo Imoveis.
 
 Este projeto tem como objetivo apresentar, aos futuros proprietários, os serviços oferecidos pela imobiliária e também prestar suporte em cada uma das etapas necessárias.
 
-[Visitar site]()
+[Visitar site](https://zelo-imoveis.vercel.app/)
 
 ### Lista com as funcionalidades:
 
-- [x] Apresentação de imoveis para compra ou aluguel;
-- [x] Contato direto com os corretores;
 - [x] Implementação da LGPD;
 
 ### Desafios do projeto
@@ -63,6 +61,8 @@ E com as bibliotecas:
 - [ ] adicionar métodos de financiamento;
 - [ ] adicionar métodos de parcelamento;
 - [ ] adicionar cadastro de clientes;
+- [ ] Apresentação de imoveis para compra ou aluguel;
+- [ ] Contato direto com os corretores;
 
 ## ✒️ Autor
 
