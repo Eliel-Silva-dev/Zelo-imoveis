@@ -1,8 +1,8 @@
 {
   "cidades": [
     { "nomeCidade": "Campinas", "idCidade": "1c" },
-    { "nomeCidade": "Vinhedo", "idCidade": "1c" },
-    { "nomeCidade": "Sumaré", "idCidade": "1c" },
-    { "nomeCidade": "Matão", "idCidade": "1c" }
+    { "nomeCidade": "Vinhedo", "idCidade": "2c" },
+    { "nomeCidade": "Sumaré", "idCidade": "3c" },
+    { "nomeCidade": "Matão", "idCidade": "4c" }
   ]
 }
