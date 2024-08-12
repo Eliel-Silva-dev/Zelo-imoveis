@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import style from './style.min.module.css';
 
 import Link from 'next/link';
-import Button from '@/components/buttons/Button';
+import Button from '@/shared/components/buttons/Button';
 
 const MenuDesk = () => {
   const hamburguerActive = () => {
