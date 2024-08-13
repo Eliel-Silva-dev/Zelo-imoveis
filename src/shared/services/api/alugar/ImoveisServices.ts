@@ -84,4 +84,19 @@ const createImoveis = async (
     );
   }
 };
-export { getAllImoveis, getImoveisById, createImoveis };
+
+const updateImoveilById = async (
+  id: string,
+  dados: IDetalheImoveis,
+): Promise<void | Error> => {
+  try {
+    await Api.put(`/imoveis?${id}`, dados);
+  } catch (error) {
+    console.error(error);
+
+    return new Error(
+      (error as { message: string }).message || 'Erro ao atualizar o registrp',
+    );
+  }
+};
+export { getAllImoveis, getImoveisById, createImoveis, updateImoveilById };
