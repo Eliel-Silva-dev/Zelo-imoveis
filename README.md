@@ -44,14 +44,18 @@ Ferramentas usadas para criar o projeto:
 - [SASS](https://sass-lang.com/)
 - [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 - [Next](https://nextjs.org/)
+- [React](https://reactjs.org/)
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 - [Typescript](https://www.typescriptlang.org/)
-- [React](https://reactjs.org/)
 
 E com as bibliotecas:
 
+- [yup](https://www.npmjs.com/package/yup)
+- [axios](https://axios-http.com/ptbr/docs/intro)
 - [eslint](https://eslint.org/)
+- [unform](https://github.com/unform/unform)
 - [prettier](https://prettier.io/)
+- [json-server](https://www.npmjs.com/package/json-server)
 - [react-icons](https://react-icons.github.io/react-icons/)
 
 ## Próximos passos
