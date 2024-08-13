@@ -1,2 +1,2 @@
-export * as ImoveisServices from './alugar/ImoveisServices';
+export * as ImoveisServices from './imoveis/ImoveisServices';
 export * from './axios-config';
