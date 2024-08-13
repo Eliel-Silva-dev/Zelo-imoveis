@@ -95,8 +95,27 @@ const updateImoveilById = async (
     console.error(error);
 
     return new Error(
-      (error as { message: string }).message || 'Erro ao atualizar o registrp',
+      (error as { message: string }).message || 'Erro ao atualizar o registro',
     );
   }
 };
-export { getAllImoveis, getImoveisById, createImoveis, updateImoveilById };
+
+const deleteImoveisById = async (id: string): Promise<void | Error> => {
+  try {
+    await Api.delete(`/imoveis?${id}`);
+  } catch (error) {
+    console.error(error);
+
+    return new Error(
+      (error as { message: string }).message || 'Erro ao apagar o registro',
+    );
+  }
+};
+
+export {
+  getAllImoveis,
+  getImoveisById,
+  createImoveis,
+  updateImoveilById,
+  deleteImoveisById,
+};
