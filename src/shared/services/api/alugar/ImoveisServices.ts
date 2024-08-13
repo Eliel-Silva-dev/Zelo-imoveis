@@ -64,4 +64,24 @@ const getImoveisById = async (id: string): Promise<IDetalheImoveis | Error> => {
     );
   }
 };
-export { getAllImoveis, getImoveisById };
+
+const createImoveis = async (
+  dados: Omit<IDetalheImoveis, 'id'>,
+): Promise<string | Error> => {
+  try {
+    const { data } = await Api.post<IDetalheImoveis>('/imoveis', dados);
+
+    if (data) {
+      return data.id;
+    }
+
+    return new Error('Erro ao criar o registro');
+  } catch (error) {
+    console.error(error);
+
+    return new Error(
+      (error as { message: string }).message || 'Erro ao criar o registro',
+    );
+  }
+};
+export { getAllImoveis, getImoveisById, createImoveis };
