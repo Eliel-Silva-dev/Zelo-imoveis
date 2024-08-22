@@ -3,6 +3,8 @@ import style from './style.min.module.css';
 
 const PrivacyPolicies = () => {
   const nameSite = 'Zelo imoveis';
+  const datePolitic =
+    'Esta política é efetiva a partir de 24 de Julho 2024 00:00';
   return (
     <main className={style.privacyPolicies}>
       <section className={style.privacy}>
@@ -107,7 +109,7 @@ const PrivacyPolicies = () => {
           mais seguro deixar os cookies ativados, caso interaja com um dos
           recursos que você usa em nosso site.
         </p>
-        <p>Esta política é efetiva a partir de 18 de Agosto 2024 00:00</p>
+        <p>{datePolitic}</p>
       </section>
     </main>
   );
