@@ -10,5 +10,11 @@
     { "nomeCondominio": "Vinhedo", "idCondomino": "2c" },
     { "nomeCondominio": "Sumaré", "idCondomino": "3c" },
     { "nomeCondominio": "Matão", "idCondomino": "4c" }
+  ],
+  "Apartamento": [
+    { "nomeApartamento": "Campinas", "idApartamento": "1c" },
+    { "nomeApartamento": "Vinhedo", "idApartamento": "2c" },
+    { "nomeApartamento": "Sumaré", "idApartamento": "3c" },
+    { "nomeApartamento": "Matão", "idApartamento": "4c" }
   ]
 }
