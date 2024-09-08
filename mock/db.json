@@ -16,5 +16,11 @@
     { "nomeApartamento": "Vinhedo", "idApartamento": "2c" },
     { "nomeApartamento": "Sumaré", "idApartamento": "3c" },
     { "nomeApartamento": "Matão", "idApartamento": "4c" }
+  ],
+  "Casa": [
+    { "nomeCasa": "Campinas", "idCasa": "1c" },
+    { "nomeCasa": "Vinhedo", "idCasa": "2c" },
+    { "nomeCasa": "Sumaré", "idCasa": "3c" },
+    { "nomeCasa": "Matão", "idCasa": "4c" }
   ]
 }
