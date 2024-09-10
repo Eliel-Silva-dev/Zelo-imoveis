@@ -34,6 +34,7 @@
         "https://picsum.ph otos/300/250",
         "https://picsum.ph otos/300/250"
       ],
+      "imgsCardAlt": "Descrição da imagem",
       "descriptionImovel": "Descrição do imóvel, casa, apartamento, terreno",
       "valuationImovel": "5000",
       "bestImovel": "true",
@@ -43,7 +44,7 @@
       "nomeCondominio": "null",
       "dimensoesImovel": "60,30 m²",
       "qtdQuartos": "4",
-      "vagasEstacionamento": "2"
+      "qtdVagas": "2"
     }
   ]
 }
