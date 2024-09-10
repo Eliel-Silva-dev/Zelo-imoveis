@@ -5,15 +5,19 @@ const CardImovel = () => {
   return (
     <div className={style.card_container}>
       <div className={style.carrosel_container}>
-        <button type="button">{'<'}</button>
+        <button className={style.controls_card_btn} type="button">
+          {'<'}
+        </button>
         <div className={style.carrosel}>
-          <img src="#" alt="#" />
-          <img src="#" alt="#" />
-          <img src="#" alt="#" />
-          <img src="#" alt="#" />
-          <img src="#" alt="#" />
+          <img src="https://picsum.photos/300/250" alt="image ilustrativa 01" />
+          <img src="https://picsum.photos/300/250" alt="image ilustrativa 02" />
+          <img src="https://picsum.photos/300/250" alt="image ilustrativa 03" />
+          <img src="https://picsum.photos/300/250" alt="image ilustrativa 04" />
+          <img src="https://picsum.photos/300/250" alt="image ilustrativa 05" />
         </div>
-        <button type="button">{'>'}</button>
+        <button className={style.controls_card_btn} type="button">
+          {'>'}
+        </button>
       </div>
       <div className={style.info_container}>
         <h3 className={style.local}>Localização do imovel</h3>
