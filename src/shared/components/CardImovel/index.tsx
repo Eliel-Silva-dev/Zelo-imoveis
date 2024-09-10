@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import style from './style.min.module.css';
 import Button from '../buttons/Button';
+import { useRef } from 'react';
 
 type TCardImovelProps = {
   imgsCard: string[];
@@ -27,19 +28,42 @@ const CardImovel = ({
   qtdQuartos,
   qtdVagas,
 }: TCardImovelProps) => {
+  const carrosel_cont = useRef({} as HTMLDivElement);
+  const carrosel = useRef({} as HTMLDivElement);
+
+  const nextImg = () => {
+    const wtdCarrossel_cont = carrosel_cont.current.offsetWidth;
+
+    carrosel.current.scrollLeft =
+      +carrosel.current.scrollLeft + wtdCarrossel_cont;
+  };
+  const previoustImg = () => {
+    const wtdCarrossel_cont = carrosel_cont.current.offsetWidth;
+
+    carrosel.current.scrollLeft =
+      +carrosel.current.scrollLeft - wtdCarrossel_cont;
+  };
   return (
     <div className={style.card_container}>
-      <div className={style.carrosel_container}>
-        <button className={style.controls_card_btn} type="button">
+      <div ref={carrosel_cont} className={style.carrosel_container}>
+        <button
+          onClick={previoustImg}
+          className={style.controls_card_btn}
+          type="button"
+        >
           {'<'}
         </button>
-        <div className={style.carrosel}>
+        <div ref={carrosel} className={style.carrosel}>
           {imgsCard &&
             imgsCard.map((img, idx) => {
               return <img key={idx} src={img} alt={altImg} />;
             })}
         </div>
-        <button className={style.controls_card_btn} type="button">
+        <button
+          onClick={nextImg}
+          className={style.controls_card_btn}
+          type="button"
+        >
           {'>'}
         </button>
       </div>
