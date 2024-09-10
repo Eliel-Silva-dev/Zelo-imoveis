@@ -22,5 +22,28 @@
     { "nomeCasa": "Vinhedo", "idCasa": "2c" },
     { "nomeCasa": "Sumaré", "idCasa": "3c" },
     { "nomeCasa": "Matão", "idCasa": "4c" }
+  ],
+  "imovel": [
+    {
+      "idImovel": "5d6e9",
+      "localImovel": "Localização do imovel",
+      "imgsCardImovel": [
+        "https://picsum.ph otos/300/250",
+        "https://picsum.ph otos/300/250",
+        "https://picsum.ph otos/300/250",
+        "https://picsum.ph otos/300/250",
+        "https://picsum.ph otos/300/250"
+      ],
+      "descriptionImovel": "Descrição do imóvel, casa, apartamento, terreno",
+      "valuationImovel": "5000",
+      "bestImovel": "true",
+      "typeImovel": "casa",
+      "cidadeImovel": "Campinas",
+      "bairroImovel": "Vila Olímpia",
+      "nomeCondominio": "null",
+      "dimensoesImovel": "60,30 m²",
+      "qtdQuartos": "4",
+      "vagasEstacionamento": "2"
+    }
   ]
 }

@@ -1,8 +1,24 @@
+'use client';
+
 import Link from 'next/link';
 import style from './style.min.module.css';
 import Button from '../buttons/Button';
 
-const CardImovel = () => {
+type TCardImovelProps = {
+  imgsCard: string[];
+  local: string;
+  description: string;
+  valuation: number;
+  codId: string;
+};
+
+const CardImovel = ({
+  imgsCard,
+  local,
+  description,
+  valuation,
+  codId,
+}: TCardImovelProps) => {
   return (
     <div className={style.card_container}>
       <div className={style.carrosel_container}>
@@ -10,7 +26,7 @@ const CardImovel = () => {
           {'<'}
         </button>
         <div className={style.carrosel}>
-          <img src="https://picsum.photos/300/250" alt="image ilustrativa 01" />
+          <img src="" alt="image ilustrativa 01" />
           <img src="https://picsum.photos/300/250" alt="image ilustrativa 02" />
           <img src="https://picsum.photos/300/250" alt="image ilustrativa 03" />
           <img src="https://picsum.photos/300/250" alt="image ilustrativa 04" />
