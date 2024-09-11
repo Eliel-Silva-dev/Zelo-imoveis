@@ -10,16 +10,20 @@
   .carrosel {
     display: flex;
     overflow: hidden;
+
     width: 100%;
 
     img {
-      width: 100%;
+      width: 110%;
+      height: 100%;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
     }
   }
 
   .controls_card_btn {
     position: absolute;
-    height: 240px;
+    height: 250px;
     opacity: 0.3;
     width: 30px;
     cursor: pointer;
@@ -27,12 +31,14 @@
     transition: all 300ms ease-in-out;
 
     &:first-child {
-      top: 5px;
+      top: 0;
       left: 0;
+      border-top-left-radius: 10px;
     }
     &:last-child {
-      top: 5px;
+      top: 0;
       right: 0;
+      border-top-right-radius: 10px;
     }
 
     &:hover {

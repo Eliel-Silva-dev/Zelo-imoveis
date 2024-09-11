@@ -32,17 +32,13 @@ const CardImovel = ({
   const carrosel = useRef({} as HTMLDivElement);
 
   const nextImg = () => {
-    const wtdCarrossel_cont = carrosel_cont.current.offsetWidth;
-
-    carrosel.current.scrollLeft =
-      +carrosel.current.scrollLeft + wtdCarrossel_cont;
+    carrosel.current.scrollLeft = +carrosel.current.scrollLeft + 300;
   };
+
   const previoustImg = () => {
-    const wtdCarrossel_cont = carrosel_cont.current.offsetWidth;
-
-    carrosel.current.scrollLeft =
-      +carrosel.current.scrollLeft - wtdCarrossel_cont;
+    carrosel.current.scrollLeft = +carrosel.current.scrollLeft - 300;
   };
+
   return (
     <div className={style.card_container}>
       <div ref={carrosel_cont} className={style.carrosel_container}>
