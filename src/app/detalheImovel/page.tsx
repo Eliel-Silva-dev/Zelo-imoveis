@@ -23,6 +23,14 @@ const DetalheImovel = () => {
       +carrosselImgDetails.current.scrollLeft - 310;
   };
 
+  const formatCurrency = (money: number) => {
+    if (money) {
+      return money.toLocaleString('pt-BR', {
+        style: 'currency',
+        currency: 'BRL',
+      });
+    }
+  };
   useEffect(() => {
     ImoveisServices.getImoveisById(id).then((result) => {
       if (result instanceof Error) {
@@ -59,46 +67,49 @@ const DetalheImovel = () => {
           </span>
         </div>
       </section>
-      <section className={style.detailsImovel_info}>
-        <div>
-          <span>R$ 4.150.000,00</span>
-          <h2>
-            Casa em Condomínio à venda com 435 m², 4 quartos 4 vagas em
-            Residencial Parque das Araucárias, Campinas
-          </h2>
-          <p>Residencial Parque das Araucárias, Campinas - SP</p>
-        </div>
-        <div>
-          <h3>Descricão do imóvel</h3>
-          <p>
-            Maravilhosa casa à venda no Residencial Parque das Araucárias no
-            bairro Sousas em Campinas. Condomínio alto padrão. O imóvel possui
-            434m² de área construída, terreno com 761m², contempla 04 suítes,
-            amplo escritório com armários, home theater com armários,
-            dependências de empregada, banheiro de serviço, depósito com 10m²
-            com armário. Armários marca Dellano em todos os ambientes. Todos os
-            pisos e bancadas dos banheiros são em mármore importado Thassos.
-            Condomínio possui lazer completo, com piscina, academia,
-            brinquedoteca, campo de futebol, salão de festas, sauna, portaria e
-            vigilância 24 horas! Lote mais alto, próximo da portaria, piscina e
-            da área verde, ao lado do pomar! Imóvel com documentação 100%
-            regularizada! Proprietário analisa permuta por imóvel até 50% do
-            valor como parte de pagamento! Venha conhecer. Agende agora sua
-            visita no site zeloimoveis.com
-          </p>
-        </div>
-        <div>
-          <h3>Nome do condomínio</h3>
-          <p>Parque das Araucárias</p>
-        </div>
-        <div>
-          <h3>Características internas:
-          </h3>
+      {imovel && (
+        <section className={style.detailsImovel_info}>
           <div>
-            <div>/ <span></span></div>
+            <span>{formatCurrency(imovel.valuationImovel)}</span>
+            <h2>{imovel.localImovel}</h2>
+            <p>{imovel.descriptionImovel}</p>
           </div>
-        </div>
-      </section>
+          <div>
+            
+          </div>
+          <div>
+            <h3>Descricão do imóvel</h3>
+            <p>
+              Maravilhosa casa à venda no Residencial Parque das Araucárias no
+              bairro Sousas em Campinas. Condomínio alto padrão. O imóvel possui
+              434m² de área construída, terreno com 761m², contempla 04 suítes,
+              amplo escritório com armários, home theater com armários,
+              dependências de empregada, banheiro de serviço, depósito com 10m²
+              com armário. Armários marca Dellano em todos os ambientes. Todos
+              os pisos e bancadas dos banheiros são em mármore importado
+              Thassos. Condomínio possui lazer completo, com piscina, academia,
+              brinquedoteca, campo de futebol, salão de festas, sauna, portaria
+              e vigilância 24 horas! Lote mais alto, próximo da portaria,
+              piscina e da área verde, ao lado do pomar! Imóvel com documentação
+              100% regularizada! Proprietário analisa permuta por imóvel até 50%
+              do valor como parte de pagamento! Venha conhecer. Agende agora sua
+              visita no site zeloimoveis.com
+            </p>
+          </div>
+          <div>
+            <h3>Nome do condomínio</h3>
+            <p>Parque das Araucárias</p>
+          </div>
+          <div>
+            <h3>Características internas:</h3>
+            <div>
+              <div>
+                / <span></span>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
     </main>
   );
 };
