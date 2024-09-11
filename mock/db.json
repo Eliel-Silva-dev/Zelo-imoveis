@@ -7,7 +7,7 @@
   ],
   "imoveis": [
     {
-      "idImovel": "5d6e9",
+      "id": "5d6e9",
       "localImovel": "Localização do imovel",
       "imgsCardImovel": [
         "https://picsum.photos/300/250",
@@ -30,7 +30,7 @@
       "finalidadeImovel": ["compra"]
     },
     {
-      "idImovel": "8w56fd69f",
+      "id": "8w56fd69f",
       "localImovel": "Localização do imovel",
       "imgsCardImovel": [
         "https://picsum.photos/300/250",
@@ -53,7 +53,7 @@
       "finalidadeImovel": ["aluga"]
     },
     {
-      "idImovel": "uy75e2",
+      "id": "uy75e2",
       "localImovel": "Localização do imovel",
       "imgsCardImovel": [
         "https://picsum.photos/300/250",
@@ -76,7 +76,7 @@
       "finalidadeImovel": ["compra"]
     },
     {
-      "idImovel": "q9g52o",
+      "id": "q9g52o",
       "localImovel": "Localização do imovel",
       "imgsCardImovel": [
         "https://picsum.photos/300/250",
@@ -99,7 +99,7 @@
       "finalidadeImovel": ["aluga"]
     },
     {
-      "idImovel": "p8f6e12c",
+      "id": "p8f6e12c",
       "localImovel": "Localização do imovel",
       "imgsCardImovel": [
         "https://picsum.photos/300/250",
@@ -122,7 +122,7 @@
       "finalidadeImovel": ["compra"]
     },
     {
-      "idImovel": "e2f6g2g",
+      "id": "e2f6g2g",
       "localImovel": "Localização do imovel",
       "imgsCardImovel": [
         "https://picsum.photos/300/250",
@@ -145,7 +145,7 @@
       "finalidadeImovel": ["compra"]
     },
     {
-      "idImovel": "8q5j5o",
+      "id": "8q5j5o",
       "localImovel": "Localização do imovel",
       "imgsCardImovel": [
         "https://picsum.photos/300/250",
@@ -168,7 +168,7 @@
       "finalidadeImovel": ["compra"]
     },
     {
-      "idImovel": "2n3t3f1",
+      "id": "2n3t3f1",
       "localImovel": "Localização do imovel",
       "imgsCardImovel": [
         "https://picsum.photos/300/250",

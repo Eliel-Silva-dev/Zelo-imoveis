@@ -45,13 +45,13 @@ const getAllImoveis = async (
   page = 1,
   finalidade = '',
   best = '',
+  id = '',
   type = '',
   cidade = '',
   bairro = '',
   condominio = '',
   quartos = '',
   maxValue = '',
-  id = '',
 ): Promise<TImoveisComTotalCount | Error> => {
   try {
     const urlRelativa = `/imoveis?_page=${page}&_limit=${Environment.LIMITE_BUSCA_API}&finalidadeImovel_like=${finalidade}&bestImovel_like=${best}&idImovel_like=${id}&typeImovel_like=${type}&cidadeImovel_like=${cidade}&bairroImovel_like=${bairro}&nomeCondominio_like=${condominio}&qtdQuartos_like=${quartos}&valuationImovel_gte=${maxValue}`;
@@ -79,7 +79,7 @@ const getAllImoveis = async (
 const getImoveisById = async (id: string): Promise<IDetalheImoveis | Error> => {
   try {
     const { data } = await Api.get(`/imoveis?${id}`);
-
+    console.log(data);
     if (data) {
       return data;
     }

@@ -87,7 +87,7 @@ const CardImovel = ({
       </div>
       <div className={style.button_info}>
         <Button>
-          <Link href={{ pathname: '/', query: { id: codId } }}>
+          <Link href={{ pathname: '/detalheImovel', query: { id: codId } }}>
             Conhecer o imóvel
           </Link>
         </Button>
