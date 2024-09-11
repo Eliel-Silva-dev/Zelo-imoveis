@@ -76,10 +76,9 @@ const getAllImoveis = async (
   }
 };
 
-const getImoveisById = async (id: string): Promise<IDetalheImoveis | Error> => {
+const getImovelById = async (id: string): Promise<IDetalheImoveis | Error> => {
   try {
-    const { data } = await Api.get(`/imoveis?${id}`);
-    console.log(data);
+    const { data } = await Api.get<IDetalheImoveis>(`/imoveis/${id}`);
     if (data) {
       return data;
     }
@@ -143,7 +142,7 @@ const deleteImoveisById = async (id: string): Promise<void | Error> => {
 
 export {
   getAllImoveis,
-  getImoveisById,
+  getImovelById as getImoveisById,
   createImoveis,
   updateImoveilById,
   deleteImoveisById,

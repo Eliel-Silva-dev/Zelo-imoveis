@@ -1,5 +1,44 @@
 .main_detalheImovel {
-  h2 {
-    font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .container_detail_imovel {
+    width: 100%;
+    height: 350px;
+    border-bottom: 2px solid var(--secondary_color);
+
+    .container_carrossel_detail{
+      width: 100%;
+      overflow: hidden;
+
+      .carrossel_detail{
+        border: 1px solid red;
+        display: flex;
+        gap: 5px;
+
+        img{
+          width: 100%;
+        }
+      }
+    }
+
+    .controls_carrossel {
+      padding: 20px;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--primary_color);
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    .controls_carrossel span {
+      background-color: var(--secondary_color);
+      padding: 10px 15px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
   }
+
+  
 }
