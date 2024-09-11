@@ -39,6 +39,16 @@ const CardImovel = ({
     carrosel.current.scrollLeft = +carrosel.current.scrollLeft - 300;
   };
 
+  const formatCurrency = (money: number) => {
+    console.log(typeof money);
+    if (money) {
+      return money.toLocaleString('pt-BR', {
+        style: 'currency',
+        currency: 'BRL',
+      });
+    }
+  };
+
   return (
     <div className={style.card_container}>
       <div ref={carrosel_cont} className={style.carrosel_container}>
@@ -68,7 +78,7 @@ const CardImovel = ({
         <p className={style.description}>{description}</p>
       </div>
       <div className={style.box_plus}>
-        <span>{valuation}</span>
+        <span>{formatCurrency(valuation)}</span>
         <span>Cod.: {codId}</span>
       </div>
       <div className={style.box_desc}>
