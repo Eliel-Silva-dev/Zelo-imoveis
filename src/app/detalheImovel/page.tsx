@@ -10,6 +10,7 @@ import {
   FaBed,
   FaBuilding,
   FaCar,
+  FaCheck,
   FaHome,
   FaShower,
 } from 'react-icons/fa';
@@ -77,12 +78,12 @@ const DetalheImovel = () => {
       </section>
       {imovel && (
         <section className={style.detailsImovel_info}>
-          <div>
+          <div className={style.title}>
             <span>{formatCurrency(imovel.valuationImovel)}</span>
-            <h2>{imovel.localImovel}</h2>
-            <p>{imovel.descriptionImovel}</p>
+            <h2>{imovel.descriptionImovel}</h2>
+            <p>{imovel.localImovel}</p>
           </div>
-          <div>
+          <div className={style.caracteristicas}>
             <div>
               <FaHome />
               <span>{imovel.dimensoesImovel}</span>
@@ -93,37 +94,83 @@ const DetalheImovel = () => {
             </div>
             <div>
               <FaBed />
-              <span>{imovel.qtdQuartos}</span> <p>quarto(s)</p>
+              <p>
+                <span>{imovel.qtdQuartos}</span> quarto(s)
+              </p>
             </div>
             <div>
               <FaShower />
-              <span>{imovel.qtdBanheiros}</span> <p>banheiro(s)</p>
+              <p>
+                <span>{imovel.qtdBanheiros}</span> banheiro(s)
+              </p>
             </div>
             <div>
               <FaCar />
-              <span>{imovel.qtdVagas}</span> <p>vaga(s)</p>
+              <p>
+                <span>{imovel.qtdVagas}</span> vaga(s)
+              </p>
             </div>
             <div>
               <FaBath />
-              <span>{imovel.qtdSuite}</span> <p>suite(s)</p>
+              <p>
+                <span>{imovel.qtdSuite}</span> suite(s)
+              </p>
             </div>
           </div>
-          <div>
+          <div className={style.description}>
             <h3>Descricão do imóvel:</h3>
-            <p>
-              {imovel.longDesc}
-            </p>
+            <p>{imovel.longDesc}</p>
           </div>
           <div>
             <h3>Nome do condomínio:</h3>
             <p>{imovel.nomeCondominio}</p>
           </div>
           <div>
-            <h3>Características internas:</h3>
-            <div>
-              <div>
-                / <span></span>
-              </div>
+            <h3>Caracteristicas internas:</h3>
+            <div className={style.plus}>
+              {imovel.caracteristicasInternas.map((carac, idx) => {
+                return (
+                  <div key={idx}>
+                    <FaCheck /> <span>{carac}</span>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+          <div>
+            <h3>Caracteristicas externas: </h3>
+            <div className={style.plus}>
+              {imovel.caracteristicasExternas.map((carac, idx) => {
+                return (
+                  <div key={idx}>
+                    <FaCheck /> <span>{carac}</span>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+          <div>
+            <h3>Lazer: </h3>
+            <div className={style.plus}>
+              {imovel.lazer.map((carac, idx) => {
+                return (
+                  <div key={idx}>
+                    <FaCheck /> <span>{carac}</span>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+          <div>
+            <h3>Caracteristicas extras: </h3>
+            <div className={style.plus}>
+              {imovel.caracteristicasExtras.map((carac, idx) => {
+                return (
+                  <div key={idx}>
+                    <FaCheck /> <span>{carac}</span>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>
