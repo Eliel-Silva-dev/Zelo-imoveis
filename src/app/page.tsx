@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import style from './page.module.css';
 import CardImovel from '@/shared/components/CardImovel';
 import { IListagemImoveis } from '@/shared/services/api/imoveis/ImoveisServices';
@@ -10,8 +10,18 @@ export default function Home() {
   const [finalidadeOfImovel, setTypeOfImovel] = useState<string>('compra');
   const [imovels, setImovels] = useState<IListagemImoveis[]>();
 
+  const carroselCard = useRef({} as HTMLDivElement);
+
   const changeTypeImovel = (typeImovel: string) => {
     setTypeOfImovel(typeImovel);
+  };
+
+  const nextCard = () => {
+    carroselCard.current.scrollLeft = +carroselCard.current.scrollLeft + 310;
+  };
+
+  const previoustCard = () => {
+    carroselCard.current.scrollLeft = +carroselCard.current.scrollLeft - 310;
   };
 
   useEffect(() => {
@@ -97,7 +107,7 @@ export default function Home() {
           <span onClick={() => changeTypeImovel('compra')}>COMPRAR</span>
           <span onClick={() => changeTypeImovel('aluga')}>ALUGAR</span>
         </div>
-        <div className={style.container_carrossel_best}>
+        <div ref={carroselCard} className={style.container_carrossel_best}>
           <div className={style.carrossel_best}>
             {imovels ? (
               imovels.map((imovel) => {
@@ -120,10 +130,14 @@ export default function Home() {
               <h3>Carregando...</h3>
             )}
           </div>
-          <div className={style.controls_carrossel}>
-            <span className={style.controls_btn}>{'<'}</span>
-            <span className={style.controls_btn}>{'>'}</span>
-          </div>
+        </div>
+        <div className={style.controls_carrossel}>
+          <span onClick={previoustCard} className={style.controls_btn}>
+            {'<'}
+          </span>
+          <span onClick={nextCard} className={style.controls_btn}>
+            {'>'}
+          </span>
         </div>
       </section>
     </main>

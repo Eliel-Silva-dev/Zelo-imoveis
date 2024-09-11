@@ -120,6 +120,75 @@
       "qtdQuartos": 4,
       "qtdVagas": 2,
       "finalidadeImovel": ["compra"]
+    },
+    {
+      "idImovel": "e2f6g2g",
+      "localImovel": "Localização do imovel",
+      "imgsCardImovel": [
+        "https://picsum.photos/300/250",
+        "https://picsum.photos/300/250",
+        "https://picsum.photos/300/250",
+        "https://picsum.photos/300/250",
+        "https://picsum.photos/300/250"
+      ],
+      "imgsCardAlt": "Descrição da imagem",
+      "descriptionImovel": "Descrição do imóvel, casa, apartamento, terreno",
+      "valuationImovel": 5000,
+      "bestImovel": "best",
+      "typeImovel": "casa",
+      "cidadeImovel": "Campinas",
+      "bairroImovel": "Vila Olímpia",
+      "nomeCondominio": "null",
+      "dimensoesImovel": "60,30 m²",
+      "qtdQuartos": 4,
+      "qtdVagas": 2,
+      "finalidadeImovel": ["compra"]
+    },
+    {
+      "idImovel": "8q5j5o",
+      "localImovel": "Localização do imovel",
+      "imgsCardImovel": [
+        "https://picsum.photos/300/250",
+        "https://picsum.photos/300/250",
+        "https://picsum.photos/300/250",
+        "https://picsum.photos/300/250",
+        "https://picsum.photos/300/250"
+      ],
+      "imgsCardAlt": "Descrição da imagem",
+      "descriptionImovel": "Descrição do imóvel, casa, apartamento, terreno",
+      "valuationImovel": 5000,
+      "bestImovel": "best",
+      "typeImovel": "casa",
+      "cidadeImovel": "Campinas",
+      "bairroImovel": "Vila Olímpia",
+      "nomeCondominio": "null",
+      "dimensoesImovel": "60,30 m²",
+      "qtdQuartos": 4,
+      "qtdVagas": 2,
+      "finalidadeImovel": ["compra"]
+    },
+    {
+      "idImovel": "2n3t3f1",
+      "localImovel": "Localização do imovel",
+      "imgsCardImovel": [
+        "https://picsum.photos/300/250",
+        "https://picsum.photos/300/250",
+        "https://picsum.photos/300/250",
+        "https://picsum.photos/300/250",
+        "https://picsum.photos/300/250"
+      ],
+      "imgsCardAlt": "Descrição da imagem",
+      "descriptionImovel": "Descrição do imóvel, casa, apartamento, terreno",
+      "valuationImovel": 5000,
+      "bestImovel": "best",
+      "typeImovel": "casa",
+      "cidadeImovel": "Campinas",
+      "bairroImovel": "Vila Olímpia",
+      "nomeCondominio": "null",
+      "dimensoesImovel": "60,30 m²",
+      "qtdQuartos": 4,
+      "qtdVagas": 2,
+      "finalidadeImovel": ["compra"]
     }
   ]
 }

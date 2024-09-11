@@ -80,9 +80,6 @@
 #main_home .form_home #submit_busca button:hover {
   background-color: var(--hover);
 }
-#main_home .container_best_imovel {
-  max-width: 1400px;
-}
 #main_home .container_best_imovel h2 {
   font-size: 2.7rem;
   color: var(--text_color);
@@ -98,11 +95,31 @@
 #main_home .type_imovel span:hover {
   border-bottom: 1px solid var(--secondary_color);
 }
-
+#main_home .container_best_imovel {
+  max-width: 1000px;
+  width: 100%;
+  padding: 15px;
+}
+#main_home .container_carrossel_best {
+  overflow: hidden;
+  padding: 15px;
+}
 #main_home .carrossel_best {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   gap: 10px;
-  padding: 15px;
+}
+#main_home .controls_carrossel {
+  padding: 20px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary_color);
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+#main_home .controls_carrossel span {
+  background-color: var(--secondary_color);
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
 }
