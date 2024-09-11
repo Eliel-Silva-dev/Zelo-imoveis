@@ -3,10 +3,12 @@
 import { useEffect, useState } from 'react';
 import style from './page.module.css';
 import CardImovel from '@/shared/components/CardImovel';
+import { IListagemImoveis } from '@/shared/services/api/imoveis/ImoveisServices';
+import { ImoveisServices } from '@/shared/services/api';
 
 export default function Home() {
-  const [typeOfImovel, setTypeOfImovel] = useState<string>('comprar');
-
+  const [finalidadeOfImovel, setTypeOfImovel] = useState<string>('compra');
+  const [imovels, setImovels] = useState<IListagemImoveis[]>();
   const changeTypeImovel = (typeImovel: string) => {
     console.log('mostrando tipo de imovel: ', typeImovel);
 
@@ -14,9 +16,14 @@ export default function Home() {
   };
 
   useEffect(() => {
-    //fazer uma requisição ao banco de dados.
-    // uma vez ao carregar a página, e sempre que o valor do tipo de imovel mudar.
-  }, [typeOfImovel]);
+    ImoveisServices.getAllImoveis(1, finalidadeOfImovel).then((result) => {
+      if (result instanceof Error) {
+        alert('Não foi possível consultar os dados');
+      } else {
+        setImovels(result.data);
+      }
+    });
+  }, [finalidadeOfImovel]);
 
   return (
     <main id={style.main_home}>
@@ -92,22 +99,39 @@ export default function Home() {
         <div>
           <span
             className={style.type_imovel}
-            onClick={() => changeTypeImovel('comprar')}
+            onClick={() => changeTypeImovel('compra')}
           >
             COMPRAR
           </span>
           <span
             className={style.type_imovel}
-            onClick={() => changeTypeImovel('alugar')}
+            onClick={() => changeTypeImovel('aluga')}
           >
             ALUGAR
           </span>
         </div>
         <div className={style.container_carrossel_best}>
           <div className={style.carrossel_best}>
-            <CardImovel />
-            <CardImovel />
-            <CardImovel />
+            {imovels ? (
+              imovels.map((imovel) => {
+                return (
+                  <CardImovel
+                    key={imovel.idImovel}
+                    valuation={imovel.valuationImovel}
+                    codId={imovel.idImovel}
+                    description={imovel.descriptionImovel}
+                    dimensao={imovel.dimensoesImovel}
+                    imgsCard={imovel.imgsCardImovel}
+                    altImg={imovel.imgsCardAlt}
+                    local={imovel.localImovel}
+                    qtdQuartos={imovel.qtdQuartos}
+                    qtdVagas={imovel.qtdVagas}
+                  />
+                );
+              })
+            ) : (
+              <h3>Carregando...</h3>
+            )}
           </div>
           <div className={style.controls_carrossel}>
             <span className={style.controls_btn}>{'<'}</span>

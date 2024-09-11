@@ -5,34 +5,16 @@
     { "nomeCidade": "Sumaré", "idCidade": "3c" },
     { "nomeCidade": "Matão", "idCidade": "4c" }
   ],
-  "condominio": [
-    { "nomeCondominio": "Campinas", "idCondomino": "1c" },
-    { "nomeCondominio": "Vinhedo", "idCondomino": "2c" },
-    { "nomeCondominio": "Sumaré", "idCondomino": "3c" },
-    { "nomeCondominio": "Matão", "idCondomino": "4c" }
-  ],
-  "Apartamento": [
-    { "nomeApartamento": "Campinas", "idApartamento": "1c" },
-    { "nomeApartamento": "Vinhedo", "idApartamento": "2c" },
-    { "nomeApartamento": "Sumaré", "idApartamento": "3c" },
-    { "nomeApartamento": "Matão", "idApartamento": "4c" }
-  ],
-  "Casa": [
-    { "nomeCasa": "Campinas", "idCasa": "1c" },
-    { "nomeCasa": "Vinhedo", "idCasa": "2c" },
-    { "nomeCasa": "Sumaré", "idCasa": "3c" },
-    { "nomeCasa": "Matão", "idCasa": "4c" }
-  ],
-  "imovel": [
+  "imoveis": [
     {
       "idImovel": "5d6e9",
       "localImovel": "Localização do imovel",
       "imgsCardImovel": [
-        "https://picsum.ph otos/300/250",
-        "https://picsum.ph otos/300/250",
-        "https://picsum.ph otos/300/250",
-        "https://picsum.ph otos/300/250",
-        "https://picsum.ph otos/300/250"
+        "https://picsum.photos/300/250",
+        "https://picsum.photos/300/250",
+        "https://picsum.photos/300/250",
+        "https://picsum.photos/300/250",
+        "https://picsum.photos/300/250"
       ],
       "imgsCardAlt": "Descrição da imagem",
       "descriptionImovel": "Descrição do imóvel, casa, apartamento, terreno",
@@ -44,7 +26,100 @@
       "nomeCondominio": "null",
       "dimensoesImovel": "60,30 m²",
       "qtdQuartos": "4",
-      "qtdVagas": "2"
+      "qtdVagas": "2",
+      "finalidadeImovel": ["compra"]
+    },
+    {
+      "idImovel": "8w56fd69f",
+      "localImovel": "Localização do imovel",
+      "imgsCardImovel": [
+        "https://picsum.photos/300/250",
+        "https://picsum.photos/300/250",
+        "https://picsum.photos/300/250",
+        "https://picsum.photos/300/250",
+        "https://picsum.photos/300/250"
+      ],
+      "imgsCardAlt": "Descrição da imagem",
+      "descriptionImovel": "Descrição do imóvel, casa, apartamento, terreno",
+      "valuationImovel": "5000",
+      "bestImovel": "true",
+      "typeImovel": "casa",
+      "cidadeImovel": "Campinas",
+      "bairroImovel": "Vila Olímpia",
+      "nomeCondominio": "null",
+      "dimensoesImovel": "60,30 m²",
+      "qtdQuartos": "4",
+      "qtdVagas": "2",
+      "finalidadeImovel": ["aluga"]
+    },
+    {
+      "idImovel": "uy75e2",
+      "localImovel": "Localização do imovel",
+      "imgsCardImovel": [
+        "https://picsum.photos/300/250",
+        "https://picsum.photos/300/250",
+        "https://picsum.photos/300/250",
+        "https://picsum.photos/300/250",
+        "https://picsum.photos/300/250"
+      ],
+      "imgsCardAlt": "Descrição da imagem",
+      "descriptionImovel": "Descrição do imóvel, casa, apartamento, terreno",
+      "valuationImovel": "5000",
+      "bestImovel": "true",
+      "typeImovel": "casa",
+      "cidadeImovel": "Campinas",
+      "bairroImovel": "Vila Olímpia",
+      "nomeCondominio": "null",
+      "dimensoesImovel": "60,30 m²",
+      "qtdQuartos": "4",
+      "qtdVagas": "2",
+      "finalidadeImovel": ["compra"]
+    },
+    {
+      "idImovel": "q9g52o",
+      "localImovel": "Localização do imovel",
+      "imgsCardImovel": [
+        "https://picsum.photos/300/250",
+        "https://picsum.photos/300/250",
+        "https://picsum.photos/300/250",
+        "https://picsum.photos/300/250",
+        "https://picsum.photos/300/250"
+      ],
+      "imgsCardAlt": "Descrição da imagem",
+      "descriptionImovel": "Descrição do imóvel, casa, apartamento, terreno",
+      "valuationImovel": "5000",
+      "bestImovel": "true",
+      "typeImovel": "casa",
+      "cidadeImovel": "Campinas",
+      "bairroImovel": "Vila Olímpia",
+      "nomeCondominio": "null",
+      "dimensoesImovel": "60,30 m²",
+      "qtdQuartos": "4",
+      "qtdVagas": "2",
+      "finalidadeImovel": ["aluga"]
+    },
+    {
+      "idImovel": "p8f6e12c",
+      "localImovel": "Localização do imovel",
+      "imgsCardImovel": [
+        "https://picsum.photos/300/250",
+        "https://picsum.photos/300/250",
+        "https://picsum.photos/300/250",
+        "https://picsum.photos/300/250",
+        "https://picsum.photos/300/250"
+      ],
+      "imgsCardAlt": "Descrição da imagem",
+      "descriptionImovel": "Descrição do imóvel, casa, apartamento, terreno",
+      "valuationImovel": "5000",
+      "bestImovel": "true",
+      "typeImovel": "casa",
+      "cidadeImovel": "Campinas",
+      "bairroImovel": "Vila Olímpia",
+      "nomeCondominio": "null",
+      "dimensoesImovel": "60,30 m²",
+      "qtdQuartos": "4",
+      "qtdVagas": "2",
+      "finalidadeImovel": ["compra"]
     }
   ]
 }

@@ -6,7 +6,7 @@ export const Environment = {
   /*
     limite de dados retornados na busca:
   */
-  LIMITE_BUSCA_API: 10,
+  LIMITE_BUSCA_API: 20,
   /*
     url base das consultas api
   */

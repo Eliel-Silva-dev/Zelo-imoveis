@@ -2,30 +2,62 @@ import { Environment } from '@/shared/environment';
 import { Api } from '../axios-config';
 
 export interface IListagemImoveis {
-  id: string;
-  cidade: string;
-  condominio: string;
+  idImovel: string;
+  imgsCardImovel: string[];
+  imgsCardAlt: string;
+  localImovel: string;
+  descriptionImovel: string;
+  valuationImovel: number;
+  qtdQuartos: number;
+  qtdVagas: number;
+  bestImovel: boolean;
+  typeImovel: string;
+  finalidadeImovel: string[];
+  cidadeImovel: string;
+  bairroImovel: string;
+  nomeCondominio: string;
+  dimensoesImovel: number;
 }
-
 export interface IDetalheImoveis {
-  id: string;
-  cidade: string;
-  condominio: string;
+  idImovel: string;
+  imgsCardImovel: string[];
+  imgsCardAlt: string;
+  localImovel: string;
+  descriptionImovel: string;
+  valuationImovel: number;
+  qtdQuartos: number;
+  qtdVagas: number;
+  bestImovel: boolean;
+  typeImovel: string;
+  finalidadeImovel: string[];
+  cidadeImovel: string;
+  bairroImovel: string;
+  nomeCondominio: string;
+  dimensoesImovel: number;
 }
 
 type TImoveisComTotalCount = {
   data: IListagemImoveis[];
   totalCount: number;
 };
+/*
 
+
+
+*/
 const getAllImoveis = async (
   page = 1,
-  filter = '',
+  finalidade = '',
+  type = '',
+  cidade = '',
+  bairro = '',
+  condominio = '',
+  quartos = '',
+  maxValue = '',
   id = '',
 ): Promise<TImoveisComTotalCount | Error> => {
   try {
-    const urlRelativa = `/imoveis?_page=${page}&_limit=${Environment.LIMITE_BUSCA_API}&nome_like=${filter}&id_like=${id}`;
-
+    const urlRelativa = `/imoveis?_page=${page}&_limit=${Environment.LIMITE_BUSCA_API}&finalidadeImovel_like=${finalidade}&idImovel_like=${id}&typeImovel_like=${type}&cidadeImovel_like=${cidade}&bairroImovel_like=${bairro}&nomeCondominio_like=${condominio}&qtdQuartos_like=${quartos}&valuationImovel_gte=${maxValue}`;
     const { data, headers } = await Api.get(urlRelativa);
 
     if (data) {
@@ -72,7 +104,7 @@ const createImoveis = async (
     const { data } = await Api.post<IDetalheImoveis>('/imoveis', dados);
 
     if (data) {
-      return data.id;
+      return data.idImovel;
     }
 
     return new Error('Erro ao criar o registro');
