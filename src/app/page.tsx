@@ -11,19 +11,19 @@ export default function Home() {
   const [imovels, setImovels] = useState<IListagemImoveis[]>();
 
   const changeTypeImovel = (typeImovel: string) => {
-    console.log('mostrando tipo de imovel: ', typeImovel);
-
     setTypeOfImovel(typeImovel);
   };
 
   useEffect(() => {
-    ImoveisServices.getAllImoveis(1, finalidadeOfImovel).then((result) => {
-      if (result instanceof Error) {
-        alert('Não foi possível consultar os dados');
-      } else {
-        setImovels(result.data);
-      }
-    });
+    ImoveisServices.getAllImoveis(1, finalidadeOfImovel, 'best').then(
+      (result) => {
+        if (result instanceof Error) {
+          alert('Não foi possível consultar os dados');
+        } else {
+          setImovels(result.data);
+        }
+      },
+    );
   }, [finalidadeOfImovel]);
 
   return (

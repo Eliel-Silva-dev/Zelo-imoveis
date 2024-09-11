@@ -40,7 +40,6 @@ const CardImovel = ({
   };
 
   const formatCurrency = (money: number) => {
-    console.log(typeof money);
     if (money) {
       return money.toLocaleString('pt-BR', {
         style: 'currency',

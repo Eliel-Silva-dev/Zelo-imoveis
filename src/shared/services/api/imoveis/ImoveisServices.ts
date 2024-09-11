@@ -10,7 +10,7 @@ export interface IListagemImoveis {
   valuationImovel: number;
   qtdQuartos: number;
   qtdVagas: number;
-  bestImovel: boolean;
+  bestImovel: string;
   typeImovel: string;
   finalidadeImovel: string[];
   cidadeImovel: string;
@@ -27,7 +27,7 @@ export interface IDetalheImoveis {
   valuationImovel: number;
   qtdQuartos: number;
   qtdVagas: number;
-  bestImovel: boolean;
+  bestImovel: string;
   typeImovel: string;
   finalidadeImovel: string[];
   cidadeImovel: string;
@@ -40,14 +40,11 @@ type TImoveisComTotalCount = {
   data: IListagemImoveis[];
   totalCount: number;
 };
-/*
 
-
-
-*/
 const getAllImoveis = async (
   page = 1,
   finalidade = '',
+  best = '',
   type = '',
   cidade = '',
   bairro = '',
@@ -57,7 +54,7 @@ const getAllImoveis = async (
   id = '',
 ): Promise<TImoveisComTotalCount | Error> => {
   try {
-    const urlRelativa = `/imoveis?_page=${page}&_limit=${Environment.LIMITE_BUSCA_API}&finalidadeImovel_like=${finalidade}&idImovel_like=${id}&typeImovel_like=${type}&cidadeImovel_like=${cidade}&bairroImovel_like=${bairro}&nomeCondominio_like=${condominio}&qtdQuartos_like=${quartos}&valuationImovel_gte=${maxValue}`;
+    const urlRelativa = `/imoveis?_page=${page}&_limit=${Environment.LIMITE_BUSCA_API}&finalidadeImovel_like=${finalidade}&bestImovel_like=${best}&idImovel_like=${id}&typeImovel_like=${type}&cidadeImovel_like=${cidade}&bairroImovel_like=${bairro}&nomeCondominio_like=${condominio}&qtdQuartos_like=${quartos}&valuationImovel_gte=${maxValue}`;
     const { data, headers } = await Api.get(urlRelativa);
 
     if (data) {
