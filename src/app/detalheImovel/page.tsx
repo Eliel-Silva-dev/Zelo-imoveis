@@ -5,6 +5,14 @@ import { useEffect, useRef, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { ImoveisServices } from '@/shared/services/api';
 import { IListagemImoveis } from '@/shared/services/api/imoveis/ImoveisServices';
+import {
+  FaBath,
+  FaBed,
+  FaBuilding,
+  FaCar,
+  FaHome,
+  FaShower,
+} from 'react-icons/fa';
 
 const DetalheImovel = () => {
   const [imovel, setImovel] = useState<IListagemImoveis>();
@@ -75,30 +83,40 @@ const DetalheImovel = () => {
             <p>{imovel.descriptionImovel}</p>
           </div>
           <div>
-            
+            <div>
+              <FaHome />
+              <span>{imovel.dimensoesImovel}</span>
+            </div>
+            <div>
+              <FaBuilding />
+              <span>{imovel.dimensaoTotal}</span>
+            </div>
+            <div>
+              <FaBed />
+              <span>{imovel.qtdQuartos}</span> <p>quarto(s)</p>
+            </div>
+            <div>
+              <FaShower />
+              <span>{imovel.qtdBanheiros}</span> <p>banheiro(s)</p>
+            </div>
+            <div>
+              <FaCar />
+              <span>{imovel.qtdVagas}</span> <p>vaga(s)</p>
+            </div>
+            <div>
+              <FaBath />
+              <span>{imovel.qtdSuite}</span> <p>suite(s)</p>
+            </div>
           </div>
           <div>
-            <h3>Descricão do imóvel</h3>
+            <h3>Descricão do imóvel:</h3>
             <p>
-              Maravilhosa casa à venda no Residencial Parque das Araucárias no
-              bairro Sousas em Campinas. Condomínio alto padrão. O imóvel possui
-              434m² de área construída, terreno com 761m², contempla 04 suítes,
-              amplo escritório com armários, home theater com armários,
-              dependências de empregada, banheiro de serviço, depósito com 10m²
-              com armário. Armários marca Dellano em todos os ambientes. Todos
-              os pisos e bancadas dos banheiros são em mármore importado
-              Thassos. Condomínio possui lazer completo, com piscina, academia,
-              brinquedoteca, campo de futebol, salão de festas, sauna, portaria
-              e vigilância 24 horas! Lote mais alto, próximo da portaria,
-              piscina e da área verde, ao lado do pomar! Imóvel com documentação
-              100% regularizada! Proprietário analisa permuta por imóvel até 50%
-              do valor como parte de pagamento! Venha conhecer. Agende agora sua
-              visita no site zeloimoveis.com
+              {imovel.longDesc}
             </p>
           </div>
           <div>
-            <h3>Nome do condomínio</h3>
-            <p>Parque das Araucárias</p>
+            <h3>Nome do condomínio:</h3>
+            <p>{imovel.nomeCondominio}</p>
           </div>
           <div>
             <h3>Características internas:</h3>

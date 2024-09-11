@@ -17,6 +17,14 @@ export interface IListagemImoveis {
   bairroImovel: string;
   nomeCondominio: string;
   dimensoesImovel: number;
+  dimensaoTotal: string;
+  qtdBanheiros: number;
+  qtdSuite: number;
+  longDesc: string;
+  caracteristicasInternas: string[];
+  caracteristicasExternas: string[];
+  lazer: string[];
+  caracteristicasExtras: string[];
 }
 export interface IDetalheImoveis {
   id: string;
@@ -34,6 +42,14 @@ export interface IDetalheImoveis {
   bairroImovel: string;
   nomeCondominio: string;
   dimensoesImovel: number;
+  dimensaoTotal: string;
+  qtdBanheiros: number;
+  qtdSuite: number;
+  longDesc: string;
+  caracteristicasInternas: string[];
+  caracteristicasExternas: string[];
+  lazer: string[];
+  caracteristicasExtras: string[];
 }
 
 type TImoveisComTotalCount = {
