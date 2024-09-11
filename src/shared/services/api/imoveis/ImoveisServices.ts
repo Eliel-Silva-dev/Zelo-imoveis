@@ -2,7 +2,7 @@ import { Environment } from '@/shared/environment';
 import { Api } from '../axios-config';
 
 export interface IListagemImoveis {
-  idImovel: string;
+  id: string;
   imgsCardImovel: string[];
   imgsCardAlt: string;
   localImovel: string;
@@ -19,7 +19,7 @@ export interface IListagemImoveis {
   dimensoesImovel: number;
 }
 export interface IDetalheImoveis {
-  idImovel: string;
+  id: string;
   imgsCardImovel: string[];
   imgsCardAlt: string;
   localImovel: string;
@@ -54,7 +54,7 @@ const getAllImoveis = async (
   maxValue = '',
 ): Promise<TImoveisComTotalCount | Error> => {
   try {
-    const urlRelativa = `/imoveis?_page=${page}&_limit=${Environment.LIMITE_BUSCA_API}&finalidadeImovel_like=${finalidade}&bestImovel_like=${best}&idImovel_like=${id}&typeImovel_like=${type}&cidadeImovel_like=${cidade}&bairroImovel_like=${bairro}&nomeCondominio_like=${condominio}&qtdQuartos_like=${quartos}&valuationImovel_gte=${maxValue}`;
+    const urlRelativa = `/imoveis?_page=${page}&_limit=${Environment.LIMITE_BUSCA_API}&finalidadeImovel_like=${finalidade}&bestImovel_like=${best}&id_like=${id}&typeImovel_like=${type}&cidadeImovel_like=${cidade}&bairroImovel_like=${bairro}&nomeCondominio_like=${condominio}&qtdQuartos_like=${quartos}&valuationImovel_gte=${maxValue}`;
     const { data, headers } = await Api.get(urlRelativa);
 
     if (data) {
@@ -101,7 +101,7 @@ const createImoveis = async (
     const { data } = await Api.post<IDetalheImoveis>('/imoveis', dados);
 
     if (data) {
-      return data.idImovel;
+      return data.id;
     }
 
     return new Error('Erro ao criar o registro');

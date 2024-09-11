@@ -30,6 +30,7 @@ export default function Home() {
         if (result instanceof Error) {
           alert('Não foi possível consultar os dados');
         } else {
+          console.log(result.data);
           setImovels(result.data);
         }
       },
@@ -113,9 +114,9 @@ export default function Home() {
               imovels.map((imovel) => {
                 return (
                   <CardImovel
-                    key={imovel.idImovel}
+                    key={imovel.id}
                     valuation={imovel.valuationImovel}
-                    codId={imovel.idImovel}
+                    codId={imovel.id}
                     description={imovel.descriptionImovel}
                     dimensao={imovel.dimensoesImovel}
                     imgsCard={imovel.imgsCardImovel}
