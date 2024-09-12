@@ -5,6 +5,8 @@ import style from './page.module.css';
 import CardImovel from '@/shared/components/CardImovel';
 import { IListagemImoveis } from '@/shared/services/api/imoveis/ImoveisServices';
 import { ImoveisServices } from '@/shared/services/api';
+import Link from 'next/link';
+import Button from '@/shared/components/buttons/Button';
 
 export default function Home() {
   const [finalidadeOfImovel, setTypeOfImovel] = useState<string>('compra');
@@ -98,7 +100,24 @@ export default function Home() {
             </div>
           </div>
           <div id={style.submit_busca}>
-            <button type="submit">BUSCAR IMÓVEIS</button>
+            <Button>
+              <Link
+                href={{
+                  pathname: '/searchImovel',
+                  query: {
+                    type: '',
+                    cidade: '',
+                    bairro: '',
+                    quartos: '',
+                    maxValue: '',
+                    finalidade: '',
+                    condominio: '',
+                  },
+                }}
+              >
+                BUSCAR IMÓVEL
+              </Link>
+            </Button>
           </div>
         </form>
       </section>

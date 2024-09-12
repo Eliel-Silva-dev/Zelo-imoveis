@@ -1,1 +1,1 @@
-.main_searchImovel h2{font-size:3rem}/*# sourceMappingURL=style.min.module.css.map */
+.main_searchImovel{display:flex;justify-content:center;align-items:center;flex-direction:column}.main_searchImovel h2{font-size:3rem}.main_searchImovel .container_search{max-width:1300px;width:100%;display:flex;gap:15px;flex-wrap:wrap;justify-content:center;align-items:center;padding:15px}/*# sourceMappingURL=style.min.module.css.map */
