@@ -1,18 +1,40 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
-import style from './page.module.css';
-import CardImovel from '@/shared/components/CardImovel';
-import { IListagemImoveis } from '@/shared/services/api/imoveis/ImoveisServices';
-import { ImoveisServices } from '@/shared/services/api';
 import Link from 'next/link';
+import style from './page.module.css';
+import { useForm } from 'react-hook-form';
+import { useEffect, useState } from 'react';
+import CardImovel from '@/shared/components/CardImovel';
+import { ImoveisServices } from '@/shared/services/api';
 import Button from '@/shared/components/buttons/Button';
+import { IListagemImoveis } from '@/shared/services/api/imoveis/ImoveisServices';
+
+type TFormProps = {
+  type: string;
+  cidade: string;
+  quartos: string;
+  finalidade: string;
+  condominio: string;
+};
 
 export default function Home() {
   const [finalidadeOfImovel, setTypeOfImovel] = useState<string>('compra');
   const [imovels, setImovels] = useState<IListagemImoveis[]>();
+  const { register, watch } = useForm<TFormProps>({
+    defaultValues: {
+      cidade: '',
+      condominio: '',
+      finalidade: 'aluga',
+      quartos: '',
+      type: '',
+    },
+  });
 
-  const carroselCard = useRef({} as HTMLDivElement);
+  const type = watch('type');
+  const cidade = watch('cidade');
+  const quartos = watch('quartos');
+  const finalidade = watch('finalidade');
+  const condominio = watch('condominio');
 
   const changeTypeImovel = (typeImovel: string) => {
     setTypeOfImovel(typeImovel);
@@ -27,6 +49,7 @@ export default function Home() {
   };
 
   useEffect(() => {
+    console.log(type, cidade, quartos, finalidade, condominio);
     ImoveisServices.getAllImoveis(1, finalidadeOfImovel, 'best').then(
       (result) => {
         if (result instanceof Error) {
@@ -47,55 +70,77 @@ export default function Home() {
           <div>
             <label>Finalidade</label>
             <div>
-              <select id="finalidade">
-                <option value="1">Alugar</option>
-                <option value="2">Comprar</option>
+              <select {...register('finalidade')} id="finalidade">
+                <option value="aluga">Alugar</option>
+                <option value="compra">Comprar</option>
               </select>
             </div>
           </div>
           <div>
             <label>Tipo</label>
             <div>
-              <select id="tipo">
-                <option value="0">Carregando...</option>
+              <select {...register('type')} id="tipo">
+                <option value="">tipo imóvel</option>
+                <option value="casa">Casa</option>
+                <option value="apartamento">Apartamento</option>
+                <option value="kitnet">Kitnet</option>
+                <option value="galpao">Galpão</option>
               </select>
             </div>
           </div>
           <div>
             <label>Localização</label>
             <div>
-              <input
-                id={style.endereco}
-                type="text"
-                placeholder="Bairro ou Cidade"
-              />
-            </div>
-            <ul id="lista-endereco"></ul>
-          </div>
-          <div>
-            <label>Quartos</label>
-            <div>
-              <select id="quartos">
-                <option value="0">Quartos</option>
-                <option value="1-quartos">1 Quarto</option>
-                <option value="2-quartos">2 Quartos</option>
-                <option value="3-quartos">3 Quartos</option>
-                <option value="4-quartos">4+ Quartos</option>
+              <select {...register('cidade')} id={style.endereco}>
+                <option value="">localização</option>
+                <option value="Campinas">Campinas</option>
+                <option value="Vinhedo">Vinhedo</option>
+                <option value="Sumare">Sumaré</option>
+                <option value="Florianopolis">Florianopolis</option>
+                <option value="Matao">Matão</option>
               </select>
             </div>
           </div>
           <div>
+            <label>Quartos</label>
+            <div>
+              <select {...register('quartos')} id="quartos">
+                <option value="">quarto</option>
+                <option value="1">1 Quarto</option>
+                <option value="2">2 Quartos</option>
+                <option value="3">3 Quartos</option>
+                <option value="4">4+ Quartos</option>
+              </select>
+            </div>
+          </div>
+          {/* proximo update
+          <div>
             <label>Valor</label>
             <div>
               <input id={style.input_valor_min} type="text" placeholder="Min" />
-              <input id={style.input_valor_max} type="text" placeholder="Max" />
+              <input
+                {...register('maxValue')}
+                placeholder="Max"
+                id={style.input_valor_max}
+                type="text"
+              />
             </div>
           </div>
+           */}
           <div id="container-cond">
             <label>Condomínios</label>
             <div>
-              <select id="condominio">
-                <option value="0">Condomínio</option>
+              <select {...register('condominio')} id="condominio">
+                <option value="">condominio</option>
+                <option value="Residencial Takanos 1">
+                  Residencial Takanos 1
+                </option>
+                <option value="Residencial Takanos 2">
+                  Residencial Takanos 2
+                </option>
+                <option value="Residencial Takanos 3">
+                  Residencial Takanos 3
+                </option>
               </select>
             </div>
           </div>
@@ -105,13 +150,13 @@ export default function Home() {
                 href={{
                   pathname: '/searchImovel',
                   query: {
-                    type: '',
-                    cidade: '',
+                    type: type,
                     bairro: '',
-                    quartos: '',
                     maxValue: '',
-                    finalidade: '',
-                    condominio: '',
+                    cidade: cidade,
+                    quartos: quartos,
+                    finalidade: finalidade,
+                    condominio: condominio,
                   },
                 }}
               >
@@ -127,7 +172,7 @@ export default function Home() {
           <span onClick={() => changeTypeImovel('compra')}>COMPRAR</span>
           <span onClick={() => changeTypeImovel('aluga')}>ALUGAR</span>
         </div>
-        <div ref={carroselCard} className={style.container_carrossel_best}>
+        <div className={style.container_carrossel_best}>
           <div className={style.carrossel_best}>
             {imovels ? (
               imovels.map((imovel) => {
