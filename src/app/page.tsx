@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import style from './page.module.css';
 import { useForm } from 'react-hook-form';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import CardImovel from '@/shared/components/CardImovel';
 import { ImoveisServices } from '@/shared/services/api';
 import Button from '@/shared/components/buttons/Button';
@@ -29,6 +29,8 @@ export default function Home() {
       type: '',
     },
   });
+
+  const carroselCard = useRef({} as HTMLDivElement);
 
   const type = watch('type');
   const cidade = watch('cidade');
@@ -172,7 +174,7 @@ export default function Home() {
           <span onClick={() => changeTypeImovel('compra')}>COMPRAR</span>
           <span onClick={() => changeTypeImovel('aluga')}>ALUGAR</span>
         </div>
-        <div className={style.container_carrossel_best}>
+        <div ref={carroselCard} className={style.container_carrossel_best}>
           <div className={style.carrossel_best}>
             {imovels ? (
               imovels.map((imovel) => {

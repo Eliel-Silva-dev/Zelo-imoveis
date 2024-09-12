@@ -7,6 +7,7 @@ import CardImovel from '@/shared/components/CardImovel';
 import { ImoveisServices } from '@/shared/services/api';
 import { IListagemImoveis } from '@/shared/services/api/imoveis/ImoveisServices';
 import { useRouter } from 'next/navigation';
+
 const SearchImovel = () => {
   const [imovels, setImovels] = useState<IListagemImoveis[]>();
 
