@@ -6,10 +6,7 @@ const Logo = () => {
     <div id={style.logo_title}>
       <h2>
         <Link href={'/'}>
-          <img
-            src="/img/imgzeloimoveislogo.png"
-            alt="logo zelo imoveis"
-          />
+          <img src="/img/imgzeloimoveislogo.png" alt="logo zelo imoveis" />
         </Link>
       </h2>
     </div>

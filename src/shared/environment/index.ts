@@ -1,9 +1,5 @@
 export const Environment = {
   /*
-    Finalidade do imovel: comprar ou alugar;
-  */
-  FINALIDADE_IMOVEL: ['Comprar', 'Alugar'],
-  /*
     limite de dados retornados na busca:
   */
   LIMITE_BUSCA_API: 20,
