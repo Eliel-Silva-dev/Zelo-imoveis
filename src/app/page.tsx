@@ -85,8 +85,6 @@ export default function Home() {
                 <option value="">tipo imóvel</option>
                 <option value="casa">Casa</option>
                 <option value="apartamento">Apartamento</option>
-                <option value="kitnet">Kitnet</option>
-                <option value="galpao">Galpão</option>
               </select>
             </div>
           </div>
@@ -98,8 +96,6 @@ export default function Home() {
                 <option value="Campinas">Campinas</option>
                 <option value="Vinhedo">Vinhedo</option>
                 <option value="Sumare">Sumaré</option>
-                <option value="Florianopolis">Florianopolis</option>
-                <option value="Matao">Matão</option>
               </select>
             </div>
           </div>

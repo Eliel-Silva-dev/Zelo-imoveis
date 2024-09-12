@@ -9,6 +9,8 @@ Este projeto tem como objetivo apresentar, aos futuros proprietários, os servi�
 ### Lista com as funcionalidades:
 
 - [x] Implementação da LGPD;
+- [x] adicionar listagem de imoveis a venda;
+- [x] adicionar listagem de imoveis para aluguel;
 
 ### Desafios do projeto
 
@@ -60,12 +62,9 @@ E com as bibliotecas:
 
 ## Próximos passos
 
-- [ ] adicionar listagem de imoveis a venda;
-- [ ] adicionar listagem de imoveis para aluguel;
 - [ ] adicionar métodos de financiamento;
 - [ ] adicionar métodos de parcelamento;
 - [ ] adicionar cadastro de clientes;
-- [ ] Apresentação de imoveis para compra ou aluguel;
 - [ ] Contato direto com os corretores;
 
 ## ✒️ Autor
