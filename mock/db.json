@@ -1,9 +1,9 @@
 {
-  "imoeis": [
+  "imoveis": [
     {
       "id": "52396",
       "localImovel": "Parque Rural Fazenda Santa Cândida, Campinas - SP",
-      "imgsCardImoel": [
+      "imgsCardImovel": [
         "/img/imgcard01parquerural.jpg",
         "/img/imgcard02parquerural.jpg",
         "/img/imgcard03parquerural.jpg",
@@ -12,7 +12,7 @@
       ],
       "imgsCardAlt": "Parque Rural Fazenda Santa Cândida, Campinas - SP",
       "descriptionImovel": "Apartamento à venda com 74 m², 2 quartos 2 vagas em Parque Rural Fazenda Santa Cândida, Campinas",
-      "aluationImovel": 925000,
+      "valuationImovel": 925000,
       "bestImovel": "best",
       "typeImovel": "apartamento",
       "cidadeImovel": "Campinas",
@@ -90,7 +90,7 @@
     {
       "id": "53363",
       "localImovel": "Taquaral, Campinas - SP",
-      "imgsCardImoel": [
+      "imgsCardImovel": [
         "/img/imgcard01parquetaquaral.jpg",
         "/img/imgcard02parquetaquaral.jpg",
         "/img/imgcard03parquetaquaral.jpg",
@@ -99,7 +99,7 @@
       ],
       "imgsCardAlt": "Apartamento á venda no Taquaral em Campinas/SP.",
       "descriptionImovel": "Apartamento á venda no Taquaral em Campinas/SP.",
-      "aluationImovel": 1656000,
+      "valuationImovel": 1656000,
       "bestImovel": "best",
       "typeImovel": "apartamento",
       "cidadeImovel": "Campinas",
@@ -155,7 +155,7 @@
     {
       "id": "53827",
       "localImovel": "Mansões Santo Antônio, Campinas - SP",
-      "imgsCardImoel": [
+      "imgsCardImovel": [
         "/img/imgcard01mansoessantoantonio.jpg",
         "/img/imgcard02mansoessantoantonio.jpg",
         "/img/imgcard03mansoessantoantonio.jpg",
@@ -164,7 +164,7 @@
       ],
       "imgsCardAlt": "Mansões Santo Antônio, Campinas - SP",
       "descriptionImovel": "Apartamento à venda com 150 m², 4 quartos 3 vagas em Mansões Santo Antônio, Campinas",
-      "aluationImovel": 1400000,
+      "valuationImovel": 1400000,
       "bestImovel": "best",
       "typeImovel": "apartamento",
       "cidadeImovel": "Campinas",
@@ -223,7 +223,7 @@
     {
       "id": "49674",
       "localImovel": "Alphaville Dom Pedro 3, Campinas - SP",
-      "imgsCardImoel": [
+      "imgsCardImovel": [
         "/img/imgcard01AlphavilleDomPedro .jpg",
         "/img/imgcard02AlphavilleDomPedro .jpg",
         "/img/imgcard03AlphavilleDomPedro .jpg",
@@ -232,7 +232,7 @@
       ],
       "imgsCardAlt": "Alphaville Dom Pedro 3",
       "descriptionImovel": "Casa à venda com 381 m², 3 quartos 3 vagas em Alphaville Dom Pedro 3, Campinas",
-      "aluationImovel": 4150000,
+      "valuationImovel": 4150000,
       "bestImovel": "best",
       "typeImovel": "casa",
       "cidadeImovel": "Campinas",
@@ -307,7 +307,7 @@
     {
       "id": "53346",
       "localImovel": "Loteamento Parque dos Alecrins, Campinas - SP",
-      "imgsCardImoel": [
+      "imgsCardImovel": [
         "/img/imgcard01LoteamentoParqueAlecrins.jpg",
         "/img/imgcard02LoteamentoParqueAlecrins.jpg",
         "/img/imgcard03LoteamentoParqueAlecrins.jpg",
@@ -316,7 +316,7 @@
       ],
       "imgsCardAlt": "Loteamento Parque dos Alecrins, Campinas - SP",
       "descriptionImovel": "Casa em Condomínio à venda com 285,21 m², 3 quartos 4 vagas em Loteamento Parque dos Alecrins, Campinas",
-      "aluationImovel": 4150000,
+      "valuationImovel": 4150000,
       "bestImovel": "best",
       "typeImovel": "sobrado",
       "cidadeImovel": "Campinas",
@@ -376,7 +376,7 @@
     {
       "id": "7276",
       "localImovel": "Jardim Paiquerê, Valinhos - SP",
-      "imgsCardImoel": [
+      "imgsCardImovel": [
         "/img/imgcard01JardimPaiquere.jpg",
         "/img/imgcard02JardimPaiquere.jpg",
         "/img/imgcard03JardimPaiquere.jpg",
@@ -385,7 +385,7 @@
       ],
       "imgsCardAlt": "Jardim Paiquerê, Valinhos - SP",
       "descriptionImovel": "Casa para aluguel com 420 m², 3 quartos 6 vagas em Jardim Paiquerê, Valinhos",
-      "aluationImovel": 6500,
+      "valuationImovel": 6500,
       "bestImovel": "best",
       "typeImovel": "casa",
       "cidadeImovel": "Valinhos",
@@ -429,7 +429,7 @@
     {
       "id": "54341",
       "localImovel": "Cambuí, Campinas - SP",
-      "imgsCardImoel": [
+      "imgsCardImovel": [
         "/img/imgcard01apartamentocambui.jpg",
         "/img/imgcard02apartamentocambui.jpg",
         "/img/imgcard03apartamentocambui.jpg",
@@ -438,7 +438,7 @@
       ],
       "imgsCardAlt": "Cambuí, Campinas - SP",
       "descriptionImovel": "Apartamento para aluguel com 50 m², 1 quarto 2 vagas em Cambuí, Campinas",
-      "aluationImovel": 1900,
+      "valuationImovel": 1900,
       "bestImovel": "best",
       "typeImovel": "apartamento",
       "cidadeImovel": "Campinas",
@@ -484,7 +484,7 @@
     {
       "id": "53379",
       "localImovel": "Cambuí, Campinas - SP",
-      "imgsCardImoel": [
+      "imgsCardImovel": [
         "/img/imgcard0153379.jpg",
         "/img/imgcard0253379.jpg",
         "/img/imgcard0353379.jpg",
@@ -493,7 +493,7 @@
       ],
       "imgsCardAlt": "Cambuí, Campinas - SP",
       "descriptionImovel": "Apartamento para alugar com 37m², 1 quarto e 1 vaga",
-      "aluationImovel": 2500,
+      "valuationImovel": 2500,
       "bestImovel": "best",
       "typeImovel": "apartamento",
       "cidadeImovel": "Campinas",
@@ -526,7 +526,7 @@
     {
       "id": "54189",
       "localImovel": "Mansões Santo Antônio, Campinas - SP",
-      "imgsCardImoel": [
+      "imgsCardImovel": [
         "/img/imgcard0154189.jpg",
         "/img/imgcard0254189.jpg",
         "/img/imgcard0354189.jpg",
@@ -535,7 +535,7 @@
       ],
       "imgsCardAlt": "Mansões Santo Antônio, Campinas - SP",
       "descriptionImovel": "Apartamento para aluguel com 150 m², 4 quartos 3 vagas em Mansões Santo Antônio, Campinas",
-      "aluationImovel": 4700,
+      "valuationImovel": 4700,
       "bestImovel": "best",
       "typeImovel": "apartamento",
       "cidadeImovel": "Campinas",
@@ -596,7 +596,7 @@
     {
       "id": "53360",
       "localImovel": "Ponte Preta, Campinas - SP",
-      "imgsCardImoel": [
+      "imgsCardImovel": [
         "/img/imgcard0153360.jpg",
         "/img/imgcard0253360.jpg",
         "/img/imgcard0353360.jpg",
@@ -605,7 +605,7 @@
       ],
       "imgsCardAlt": "Ponte Preta, Campinas - SP",
       "descriptionImovel": "Apartamento de 115m² para Aluguel no Condomínio Alto da Abolição - Ponte Preta, Campinas",
-      "aluationImovel": 3400,
+      "valuationImovel": 3400,
       "bestImovel": "best",
       "typeImovel": "apartamento",
       "cidadeImovel": "Campinas",
