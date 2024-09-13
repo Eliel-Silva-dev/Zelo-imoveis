@@ -6,5 +6,6 @@ export const Environment = {
   /*
     url base das consultas api
   */
-  URL_BASE: 'http://localhost:3333',
+  URL_BASE: 'https://server-zelo.vercel.app',
+  //URL_BASE: 'http://localhost:3333',
 };
